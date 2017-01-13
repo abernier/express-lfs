@@ -1,0 +1,31 @@
+{
+  "name": "expresslfs",
+  "version": "1.0.0",
+  "description": "```sh git show HEAD:public/foo.txt version https://git-lfs.github.com/spec/v1 oid sha256:d1c7da73aa5d7eb2a5aa67df98cd6f633c594a8113d5c4aadcb5086e71255d45 size 7 ```",
+  "main": "index.js",
+  "bin": {
+    "expresslfs": "oids.js"
+  },
+  "dependencies": {
+    "async": "^2.1.4",
+    "express": "^4.14.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "express": "^4.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodenough/express-lfs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goodenough/express-lfs/issues"
+  },
+  "homepage": "https://github.com/goodenough/express-lfs#readme"
+}
