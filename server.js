@@ -28,7 +28,7 @@ app.use(function (req, res, next) {
 
     // once href retrieved
     function pipe(href) {
-      request.get(href).pipe(res);
+      request.get(href).pipe(res).on('error', next);
     }
 
     if (oid in cache && (new Date(cache[oid].expires_at) > new Date())) {
