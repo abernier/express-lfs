@@ -5,7 +5,16 @@ app.get('/', function (req, res) {
   res.send('Hello World!')
 })
 
-app.use(express.static('public'))
+var p = require('path');
+
+var PUBLICPATH = p.join(__dirname, 'public');
+app.use(express.static(PUBLICPATH, {
+	setHeaders: function (res, path, stat) {
+    //console.log('setHeaders', arguments);
+
+    console.log(p.relative(PUBLICPATH, path));
+  }
+}))
 app.use('/public/:file', function (req, res, next) {
   console.log(req.params.file)
   next()
