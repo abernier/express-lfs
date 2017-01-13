@@ -1,13 +1,4 @@
-lfsfiles = $(shell git lfs ls-files | awk '{print $$3}')
+oids.json: .FORCE
+	./bin/oids.js > $@
 
-OBJ=$(addprefix tmp/,$(lfsfiles))
-
-all: $(OBJ)
-
-tmp/%: %
-	mkdir -p $(@D) && touch $@
-	git show HEAD:$* > $@
-
-.PHONY: debug
-debug:
-	echo $(lfsfiles)
+.FORCE:
