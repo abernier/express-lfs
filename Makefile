@@ -10,4 +10,4 @@ tmp/%: %
 
 .PHONY: debug
 debug:
-	echo $(OBJ)
+	echo $(lfsfiles)
