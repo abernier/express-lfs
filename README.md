@@ -5,7 +5,7 @@ dependencies:
  - [git-lfs](https://git-lfs.github.com/)
 
 ```sh
-npm install expresslfs
+npm install https://github.com/goodenough/express-lfs/archive/master.tar.gz
 ```
 
 ## Usage
