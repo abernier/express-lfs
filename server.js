@@ -9,7 +9,7 @@ var cache = {};
 
 // http://stackoverflow.com/questions/39118884/intercept-request-for-a-static-file-in-express-js
 var staticlfs = require('./index');
-app.use(staticlfs('public', {
+app.use(staticlfs('https://github.com/goodenough/express-lfs.git/info/lfs/objects/batch', {
   oids: require('./oids.json')
 }))
 
