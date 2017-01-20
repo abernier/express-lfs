@@ -4,7 +4,7 @@ dependencies:
 
  - [git-lfs](https://git-lfs.github.com/)
 
-```
+```sh
 npm install expresslfs
 ```
 
