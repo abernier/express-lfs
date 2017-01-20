@@ -19,7 +19,8 @@ var expresslfs = require('express-lfs');
 
 var oids = require('./oids.json');
 
-app.use(expresslfs('public', {
+app.use(expresslfs('https://github.com/goodenough/express-lfs.git/info/lfs/objects/batch', {
+	publicpath: 'public',
 	oids: oids,
 	cache: true,
 	setHeaders: function (res, path, stat) {

@@ -4,9 +4,10 @@ var p = require('path');
 var _ = require('underscore');
 var request = require('request');
 
-module.exports = function (publicpath, options) {
+module.exports = function (batchapi, options) {
   options || (options = {});
   _.defaults(options, {
+    publicpath: 'public',
     oids: {},
     cache: false,
     setHeaders: undefined
@@ -23,7 +24,7 @@ module.exports = function (publicpath, options) {
   return function middleware(req, res, next) {
     console.log('lfs middleware', req.path);
 
-    var path = publicpath + req.path;
+    var path = options.publicpath + req.path;
 
     var oids = options.oids;
 
@@ -68,7 +69,7 @@ module.exports = function (publicpath, options) {
       // https://github.com/git-lfs/git-lfs/blob/v1.5.5/docs/api/batch.md
       request({
         //proxy: 'http://localhost:8888',
-        url: "https://github.com/goodenough/express-lfs.git/info/lfs/objects/batch",
+        url: batchapi,
         method: 'POST',
         json: true,
         headers: {
