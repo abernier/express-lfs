@@ -7,11 +7,11 @@
     "expresslfs": "oids.js"
   },
   "dependencies": {
-    "async": "^2.1.4",
-    "express": "^4.14.0",
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "async": "^2.1.4",
     "express": "^4.14.0"
   },
   "scripts": {
