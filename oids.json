@@ -1,0 +1,14 @@
+{
+  "public/dirA/banner.psd": {
+    "oid": "b72474b8eda4e01cccc0280be12b0bf75422713f1f519338448c184b3768e1a5",
+    "size": "447825766"
+  },
+  "public/dirB/bar.txt": {
+    "oid": "eeec67f9dacd899e57372fe8dbde7464acf5bb604bdc38585c4d7a025bdda514",
+    "size": "20"
+  },
+  "public/foo.txt": {
+    "oid": "1fd1cd81473124c04853fd44942a1235ee4b2dba5113646e329a6d96a285a8bd",
+    "size": "11"
+  }
+}
