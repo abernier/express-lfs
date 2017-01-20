@@ -1,3 +1,5 @@
+Original idea: http://stackoverflow.com/q/36902385/133327
+
 ## INSTALL
 
 dependencies:
